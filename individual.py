@@ -9,13 +9,13 @@
 """
 
 
-def f(a, b):
-    x = (a * b) - (a / b)
+def f(a):
+    x = (a * 3) - (a / 3)
 
-    def fout(a, b):
+    def fout(b):
         return f"Для значений {a}, {b} функция f(a, b) = {x}"
-    return fout(a, b)
+    return fout
 
 
 if __name__ == "__main__":
-    print(f(6, 5))
+    print(f(6)(5))
