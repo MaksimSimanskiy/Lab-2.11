@@ -13,7 +13,7 @@ def f(a, b):
     x = (a * b) - (a / b)
 
     def fout(a, b):
-        
+        nonlocal x
         return f"Для значений {a}, {b} функция f(a, b) = {x}"
     return fout(a, b)
 
